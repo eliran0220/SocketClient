@@ -5,7 +5,6 @@ const socket = io("http://localhost:3000");
 class BasicClient {
 
     initializeListeners = () => {
-
         socket.on("data", (data : Message) => {
             console.log(data.message);
         })
